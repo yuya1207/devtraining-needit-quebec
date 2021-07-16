@@ -2,10 +2,13 @@
     <sysauto_script action="INSERT_OR_UPDATE">
         <active>true</active>
         <business_calendar/>
+        <can_iterate>false</can_iterate>
         <condition/>
         <conditional>false</conditional>
         <entered_time/>
         <name>NeedIt Count Problem Records</name>
+        <offset/>
+        <offset_type/>
         <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
@@ -20,6 +23,8 @@ var gr = new GlideRecord('problem');
 gr.query();
 // Log the number of records in the Problem table
 gs.info("Total records in Problem table = " + gr.getRowCount());]]></script>
+        <source_filter/>
+        <source_table/>
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-03-16 21:29:13</sys_created_on>

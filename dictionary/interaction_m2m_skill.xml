@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element max_length="40" name="interaction_m2m_skill" sizeclass="0" type="collection">
+        <element attributes="encode_utf8=false" label="Interaction" mandatory="true" max_length="32" name="interaction" reference="interaction" reference_cascade_rule="delete" type="reference"/>
+        <element label="Mandatory" max_length="40" name="mandatory" type="boolean"/>
+        <element attributes="encode_utf8=false" label="Skill" mandatory="true" max_length="32" name="skill" reference="cmn_skill" reference_cascade_rule="delete" type="reference"/>
+        <index name="index">
+            <element name="skill"/>
+        </index>
+        <index name="index2">
+            <element name="interaction"/>
+        </index>
+        <index name="index3">
+            <element name="interaction"/>
+            <element name="skill"/>
+        </index>
+    </element>
+</database>
